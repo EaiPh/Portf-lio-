@@ -12,7 +12,7 @@
 header  {
    height: 85vh;
    transition: .5s;
-   background-image: url('/assets /imagens/background-image1.jpg');
+   background-image: url('/assets/imagens/background-image1.jpg');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
