@@ -1,8 +1,8 @@
 let imgs= [
-      "url('/assets /imagens/background-image1.jpg')",
-      'url("/assets /imagens/background-image2.jpg")',
-      "url('/assets /imagens/background-image3.jpg')",
-      "url('/assets /imagens/background-image4.jpg')",
+      "url('/assets/imagens/background-image1.jpg')",
+      'url("/assets/imagens/background-image2.jpg")',
+      "url('/assets/imagens/background-image3.jpg')",
+      "url('/assets/imagens/background-image4.jpg')",
    ]
 
 let pictureStatus= {
