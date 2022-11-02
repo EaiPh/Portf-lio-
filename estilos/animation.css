@@ -1,0 +1,27 @@
+@keyframes zoom {
+   from { 
+      width: 30px;
+      position: static;
+      margin: 0rem;
+   }
+   
+   to {
+      width: 200px;
+      position: relative;
+      margin: 500px 520px 0rem 0rem;
+   }
+}
+
+@keyframes removeZoom {
+   from {
+      width: 200px;
+      position: relative;
+      margin: 33rem 33rem 0rem 0rem;
+   }
+   
+   to {
+      width: 30px;
+      position: static;
+      margin: 0rem;
+   }
+}
