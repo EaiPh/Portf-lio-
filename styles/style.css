@@ -1,0 +1,432 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --primary-color: #000;
+   --secondary-color: #f8f9fb;
+}
+
+header  {
+   height: 85vh;
+   transition: .5s;
+   background-image: url('/assets /imagens/background-image1.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+nav {
+   height: 4em;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   gap: .6rem;
+   border-bottom: 1px solid #dbdcde;
+}
+
+#socialMedias {
+   margin-right: 3.75rem;
+}
+
+#socialMedias li {
+   display: inline;
+}
+
+a {
+   text-decoration: none;
+   color: var(--primary-color);
+}
+
+a:visited {
+   color: darkred;
+}
+
+.socialMediasIcon {
+   width: 1.8rem;
+   height: 1.8rem;
+   color: white;
+   margin: .6rem;
+}
+
+#profilePicture {
+   position: absolute;
+   right: 3rem;
+}
+
+#profilePicture img {
+   width: 1.8rem;
+   border: 2px solid #fff;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.zoom {
+   animation-name: zoom;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+
+.removeZoom {
+   animation-name: removeZoom;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+
+#sideShortCut {
+   width: 1.8rem;
+   height: 1.8rem;
+   margin: .6rem;
+   float: right;
+   color: #fff;
+}
+
+aside {
+   width: 0px;
+   height: 100vh;
+   overflow: hidden;
+   transition: .5s;
+   position: absolute;
+   top: 0;
+}
+
+.sideBar {
+   width: 18.7rem;
+   height: 100vh;
+   transition: .5s;
+   font-size: 1.5rem;
+   
+   background-color: var(--secondary-color);
+}
+
+#closeBar {
+   font-size: 2.5rem;
+   margin: .9rem 0rem 0rem .9rem;
+   color: var(--primary-color);
+}
+
+aside ul {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1.2rem;
+   margin-top: 1.5rem;
+}
+
+aside ul a:visited {
+   color: initial;
+}
+aside li {
+   list-style: none;
+}
+
+#presentation {
+   margin: 1.2rem 0rem 0rem 3rem;
+   color: white;
+}
+
+h1 {
+   font-size: 2.8rem;
+   margin-bottom: .4rem;
+}
+
+#hardSkills {
+   width: 80vw;
+   margin: auto;
+}
+
+h2 {
+   font-size: 2rem;
+   margin: 3rem;
+   text-align: center;
+   color: var(--primary-color);
+}
+
+.techs {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.cardTech {
+   width: 18.7rem;
+   height: 18.7rem;
+   padding: .6rem;
+   border: 1px solid #dbdcde;
+   margin: 1.5rem;
+   color: var(--primary-color);
+}
+
+.techName {
+   font-size: 1.5rem;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 1.2rem;
+}
+
+.cardTech p {
+   font-size: 1.2rem;
+}
+
+.row2 {
+   display: none;
+}
+
+.studing p {
+   width: 100%;
+   height: 2rem;
+   padding: .4rem;
+   font-size: 1rem;
+   color: red;
+   background-color: #e8f0fd;
+   position: relative;
+   top: 30%;
+   text-align: center;
+}
+
+#seeMore {
+   margin: 1.2rem;
+   text-align: center;
+   color: gray;
+   cursor: pointer;
+}
+
+#seeMore ion-icon {
+   font-size: 20px;
+   transform: translate(-3px,5px);
+}
+
+#certificationsAndDifferences {
+   width: 80vw;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 3.7rem auto;
+   color: var(--primary-color);
+}
+
+#certificationsAndDifferences section {
+   width: 28rem;
+   margin: 1.2rem;
+   border: 1px solid #dbdcde;
+   border-radius: 1.2rem 1.2rem 1.20rem 1.20rem;
+   padding: .6rem;
+}
+
+.title {
+   font-size: 1.2rem;
+   padding: 0rem 0rem .6rem;
+}
+
+.title + div  {
+   display: flex;
+   gap: .6rem;
+}
+
+.title + div img {
+   height: 1.8rem;
+}
+
+#whatIdo {
+   width: 80vw;
+   margin: 3.7rem auto;
+   color: var(--primary-color);
+}
+
+.container {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.card {
+   width: 12.5rem;
+   text-align: center;
+   padding: .6rem;
+}
+
+#imgSchool, #imgCourse, #imgEnglish {
+   width: 6.2rem;
+   height: 6.2rem;
+   border-radius: 50%;
+   margin: 0rem auto .6rem;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   background-color: var(--secondary-color);
+}
+
+#imgSchool img {
+   width: 3.7rem;
+   height: 3.7rem;
+}
+
+#imgCourse img {
+   width: 6.2rem;
+   height: 6.2rem;
+}
+
+#imgEnglish img {
+   margin-top: .4rem;
+}
+
+#whatIdone {
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1.2rem;
+   color: var(--primary-color);
+}
+
+#containerProject {
+   width: 50rem;
+   height: 21.8rem;
+   display: flex;
+   gap: .9rem;
+   flex-flow: row nowrap;
+   overflow: auto;
+   scroll-behavior: smooth;
+}
+
+#containerProject::-webkit-scrollbar {
+   display: none;
+}
+
+.arrows {
+   width: 4.3rem;
+   height: 4.3rem;
+   color: var(--secondary-color);
+   cursor: pointer;
+   border-radius: 50%;
+}
+
+.arrows:hover {
+   color: #dbdcde;
+   box-shadow: 0rem 0rem .6rem black;
+}
+
+.projetos {
+   width: 12.5rem;
+   height: 21.8rem;
+   padding: 1.8rem .3rem .3rem;
+   flex: none;
+   border: 1px solid #dbdcde;
+   position: relative;
+   
+   background-color: var(--secondary-color);
+}
+
+.projetos div {
+   width: 6.2rem;
+   height: 6.2rem;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.projetos p {
+   font-size: 1.2rem;
+   margin: .9rem 0rem 0rem;
+}
+
+.done {
+   margin-top: .3rem;
+   font-size: .8rem;
+   color: gray;
+   display: block;
+}
+
+.linkGithub {
+   font-size: 1rem;
+   position: absolute;
+   bottom: .9rem;
+}
+
+.seeMoreAtGithub {
+   width: 12.5rem;
+   height: 21.8rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex: none;
+   border: 1px solid #dbdcde;
+   
+   background-color: var(--secondary-color);
+}
+
+.seeMoreAtGithub ion-icon {
+   width: 4.3rem;
+   height: 4.3rem;
+}
+
+.seeMoreAtGithub a strong {
+   font-size: 1.5rem;
+}
+
+.material-symbols-outlined {
+   font-size: 1rem;
+   transform: translate(-3px,20%);
+}
+
+footer {
+   margin-top: 3rem;
+   color: white;
+   border-top: 1px solid #dbdcde;
+   background-color: #616266;
+}
+
+.contact {
+   width: 80vw;
+   margin: auto;
+   padding: 3rem;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   gap: .6rem;
+}
+
+.contact div {
+   display: flex;
+   flex-direction: column;
+}
+
+.contact input {
+   width: 18.7rem;
+   height: 3rem;
+   padding: .6rem;
+   outline: none;
+   display: inline-block;
+   border: none;
+   border-radius: .3rem;
+}
+
+textarea {
+   padding: .6rem;
+   outline: none;
+   border: none;
+   border-radius: .3rem;
+}
+
+.contact #btn {
+   width: 9.3rem;
+   height: 3rem;
+   color: red;
+   border: none;
+   border-radius: 1.2rem;
+   cursor: pointer;
+}
+
+#phrase {
+   text-align: center;
+   padding: .9rem;
+   color: white;
+   font-weight: bold;
+}

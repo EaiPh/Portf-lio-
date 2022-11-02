@@ -1,0 +1,61 @@
+@media (max-width: 1200px) {
+   
+   header {
+      height: 65vh;
+   }
+   
+   .cardTech {
+      width: 16rem;
+      height: 16rem;
+   }
+   
+   #certificationsAndDifferences section {
+      width: 23rem;
+   }
+   
+   .zoom {
+      animation: none;
+   }
+   .removeZoom {
+      animation: none;
+   }
+   
+}
+
+@media (max-width: 850px) {
+   
+   header {
+      height: 50vh;
+   }
+   
+}
+
+@media (max-width: 500px) {
+   
+   header {
+      color: red;
+      height: 40vh;
+   }
+   
+   #presentation {
+      margin-left: 2rem;
+      text-shadow: 0px 2px 2px #6496dd;
+   }
+   
+   h1 {
+      font-size: 1.5rem;
+   }
+   
+   small {
+      font-size: .7rem;
+   }
+   
+   h2 {
+      font-size: 1.5rem;
+   }
+   
+   .cardTech {
+      width: 15rem;
+   }
+   
+}
